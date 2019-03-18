@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 /* Write a C# Sharp program to swap two numbers.
 // Test Data:
 // Input the First Number : 5
@@ -50,6 +49,19 @@ public class Exercise7
         Console.WriteLine("{0} - {1} = {2}", nbr, multi, (nbr - multi));
         Console.WriteLine("{0} * {1} = {2}", nbr, multi, (nbr * multi));
         Console.WriteLine("{0} / {1} = {2}", nbr, multi, (nbr / multi));
+        Console.ReadKey();
+    }
+}
+*/
+
+/* Kérj be egy szöveget, és alakítsd nagybetűssé
+public class Exercise23
+{
+    public static void Main()
+    {
+        Console.Write("Írj be egy szöveget: ");
+        string line = Console.ReadLine();
+        Console.WriteLine(line.ToUpper());
         Console.ReadKey();
     }
 }
