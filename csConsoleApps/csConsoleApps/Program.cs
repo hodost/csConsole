@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpFundamentals.Math;
 
 /* Write a C# Sharp program to swap two numbers.
 // Test Data:
@@ -66,3 +67,78 @@ public class Exercise23
     }
 }
 */
+
+/* Variables
+namespace Variables
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // byte number = 2;
+            // int count = 10;
+            // float totalPrice = 20.95f;
+            // char character = 'A';
+            // string firstName = "Tomi";
+            // bool isWorking = false;
+
+            // int i = 1000;
+            // byte b = (byte)i;
+            // Console.WriteLine(b);
+
+            try
+            {
+                var number = "1234";
+                byte a = Convert.ToByte(number);
+
+                Console.WriteLine(a);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("A szám nem alakítható byte-tá.");
+            }
+
+            
+        }
+    }
+}
+*/
+
+/* Operators
+namespace Operators
+{
+    class Program
+    {
+        static void Main()
+        {
+            var a = 10;
+            var b = 3;
+
+            Console.WriteLine((double)a / (double)b);
+        }
+    }
+}
+*/
+
+/* CSharpFundamentals
+namespace CSharpFundamentals
+{
+    class Program
+    {
+        static void Main()
+        {
+            // Készítünk egy Person objektumot
+            var john = new Person();
+            john.FirstName = "John";
+            john.LastName = "Smith";
+            john.Introduce();
+
+            var calculator = new Calculator();
+            var result = calculator.Add(2,3);
+            Console.WriteLine(result);
+        }
+    }
+}
+*/
+
