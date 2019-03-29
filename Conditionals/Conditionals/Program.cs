@@ -78,14 +78,15 @@ namespace Conditionals
 
             var orientation = (width > height) ? ImageOrientation.landscape : ImageOrientation.portrait;
             Console.WriteLine("A kép {0}", orientation);
-        }
+            }
 
-           public enum ImageOrientation
+            public enum ImageOrientation
             {
             portrait,
             landscape
             }
-        */
+
+
 
             // Your job is to write a program for a speed camera.For simplicity, ignore the details such as camera, sensors,
             /// etc and focus purely on the logic. Write a program that asks the user to enter the speed limit. Once set, 
@@ -111,6 +112,70 @@ namespace Conditionals
                 else
                     Console.WriteLine("Demerit points: " + demeritPoints);
             }
+            }
+            }*/
+
+            /*
+            for (int i = 1; i <= 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+
+            int j = 1;
+            while (j <= 10)
+            {
+                if (j%2 == 0)
+                {
+                    Console.WriteLine(j);
+                }
+                j++;
+            }
+
+
+
+
+            //var numbers = new int[] {1,2,3,4,5};
+
+            //foreach (var szamok in numbers)
+            //{
+            //    Console.WriteLine(szamok);
+            //}
+            }
+
+            }
+            while (true)
+            {
+                Console.Write("Írd be a neved: ");
+                var input = Console.ReadLine();
+
+                if (String.IsNullOrWhiteSpace(input))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("A név: {0}", input);
+                }
+            }
+            */
+            /*
+            const int passwordLength = 10;
+            var random = new Random();
+            var buffer = new char[passwordLength];
+
+            for (int i = 0; i < passwordLength; i++)
+            {
+                buffer[i] = (char)random.Next(97, 122); // a=97, z=122
+                //buffer[i] = (char)('a' + random.Next(0,26));
+            }
+
+            var password = new string(buffer);
+            Console.WriteLine(password);
+            */
         }
     }
-}
+}   
